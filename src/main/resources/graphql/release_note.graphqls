@@ -1,0 +1,23 @@
+scalar Date
+
+type release_note {
+    noteNo:Int!
+    note_ver:String
+    note_content:String
+    debug_file_path:String
+    debug_file_download_count:Int
+    release_file_path:String
+    release_file_download_count:Int
+    creator_id:Int!
+    create_at:Date
+    updater_id:Int!
+    update_at:Date
+}
+
+type Query{
+
+}
+
+type Mutation{
+
+}

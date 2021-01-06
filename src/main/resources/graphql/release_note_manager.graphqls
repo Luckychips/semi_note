@@ -1,0 +1,18 @@
+scalar Date
+
+type release_note_manager {
+    managerId:Int!
+    name:String!
+    password:String!
+    isEnable:String
+    create_at:Date
+    update_at:Date
+}
+
+type Query{
+
+}
+
+type Mutation{
+
+}

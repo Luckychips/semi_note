@@ -1,0 +1,29 @@
+spring:
+  liquibase:
+    contexts: defaults
+#Database
+  datasource:
+    url: jdbc:mysql://localhost:3306/note
+    username: root
+    password: 1111
+    driver-class-name: org.mariadb.jdbc.Driver
+#Connection Pool
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 10
+  #JPA
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual: true
+    hibernate:
+      ddl-auto: none
+graphql:
+  servlet:
+    mapping: /graphql
