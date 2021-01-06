@@ -11,7 +11,7 @@ spring:
     hikari:
       connection-timeout: 20000
       maximum-pool-size: 10
-  #JPA
+#JPA
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
@@ -24,6 +24,8 @@ spring:
             non_contextual: true
     hibernate:
       ddl-auto: none
+#graphql
 graphql:
   servlet:
     mapping: /graphql
+    enabled: true

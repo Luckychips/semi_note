@@ -2,7 +2,7 @@ scalar Date
 
 type release_note {
     noteNo:Int!
-    note_ver:String
+    note_version:String
     note_content:String
     debug_file_path:String
     debug_file_download_count:Int
@@ -15,9 +15,5 @@ type release_note {
 }
 
 type Query{
-
-}
-
-type Mutation{
 
 }

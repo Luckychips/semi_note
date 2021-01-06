@@ -6,5 +6,5 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class ReleaseNoteQuery implements GraphQLQueryResolver {
+public class ReplyQuery  implements GraphQLQueryResolver {
 }

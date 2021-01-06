@@ -12,7 +12,3 @@ type release_note_manager {
 type Query{
 
 }
-
-type Mutation{
-
-}

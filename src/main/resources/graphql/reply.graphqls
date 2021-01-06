@@ -1,0 +1,15 @@
+scalar Date
+
+type reply {
+    replyNo:Int!
+    boardNo:Int
+    message:String!
+    password:String!
+    creatorName:String
+    createAt:Date
+    updateAt:Date
+}
+
+type Query{
+
+}

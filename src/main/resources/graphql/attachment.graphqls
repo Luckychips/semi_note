@@ -3,15 +3,11 @@ scalar Date
 type attachment {
     fileNo:Int!
     boardNo:Int
-    filePath:String!
+    filePath:String
     createAt:Date
     updateAt:Date
 }
 
 type Query{
-
-}
-
-type Mutation{
 
 }

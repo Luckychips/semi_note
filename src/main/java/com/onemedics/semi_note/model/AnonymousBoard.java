@@ -1,6 +1,8 @@
 package com.onemedics.semi_note.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Data

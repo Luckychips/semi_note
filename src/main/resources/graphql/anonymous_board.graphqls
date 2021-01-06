@@ -5,15 +5,12 @@ type anonymous_board {
     title:String!
     password:String!
     content:String
-    creatorName:String
+    creatorName:String!
     create_at:Date
     update_at:Date
+    attachments:[attachment]
 }
 
-type Query{
-
-}
-
-type Mutation{
-
+type Query {
+    findAnonymousBoards:[anonymous_board]
 }
