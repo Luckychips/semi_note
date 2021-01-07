@@ -5,9 +5,9 @@ import com.onemedics.semi_note.model.Attachment;
 import com.onemedics.semi_note.repository.AttachmentRepository;
 import graphql.kickstart.tools.GraphQLResolver;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 @RequiredArgsConstructor
 public class AnonymousBoardResolver implements GraphQLResolver<AnonymousBoard> {
 
