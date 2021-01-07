@@ -2,14 +2,14 @@ package com.onemedics.semi_note.model;
 
 import lombok.Data;
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @MappedSuperclass
 public abstract class BaseModel {
     @Column(name = "create_at", nullable = false)
-    private LocalDateTime createAt;
+    private Date createAt;
 
     @Column(name = "update_at", nullable = false)
-    private LocalDateTime updateAt;
+    private Date updateAt;
 }

@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "attachment")
-public class Attachment extends BaseModel {
+public class Attachment {
     @Id
     @GeneratedValue
     @Column(name = "file_no", nullable = false)

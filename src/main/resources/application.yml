@@ -29,3 +29,7 @@ graphql:
   servlet:
     mapping: /graphql
     enabled: true
+  datetime:
+    scalars:
+      date:
+        scalarName: Date

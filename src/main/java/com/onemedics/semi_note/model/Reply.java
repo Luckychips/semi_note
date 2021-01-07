@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "reply")
-public class Reply extends BaseModel {
+public class Reply {
     @Id
     @GeneratedValue
     @Column(name = "reply_no")

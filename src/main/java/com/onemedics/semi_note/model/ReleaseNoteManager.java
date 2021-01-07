@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "release_note_manager")
-public class ReleaseNoteManager extends BaseModel {
+public class ReleaseNoteManager {
     @Id
     @GeneratedValue
     @Column(name = "manager_id", nullable = false)

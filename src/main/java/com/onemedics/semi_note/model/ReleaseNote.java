@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "release_note")
-public class ReleaseNote extends BaseModel {
+public class ReleaseNote {
     @Id
     @GeneratedValue
     @Column(name = "note_no", nullable = false)
