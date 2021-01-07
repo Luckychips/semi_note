@@ -8,8 +8,9 @@ type AnonymousBoard {
     creatorName:String!
     createAt:Date
     updateAt:Date
+    attachments:[Attachment]
 }
 
-type Query {
-    findAll : [AnonymousBoard]
+extend type Query {
+    anonymousBoardFindAll:[AnonymousBoard]
 }

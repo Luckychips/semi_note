@@ -1,0 +1,10 @@
+type Attachment {
+    fileNo:Int!
+    boardNo:Int
+    filePath:String
+}
+
+extend type Query {
+    attachmentFindAll:[Attachment]
+}
+

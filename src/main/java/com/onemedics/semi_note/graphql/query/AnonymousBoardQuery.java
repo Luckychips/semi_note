@@ -1,18 +1,18 @@
-package com.onemedics.semi_note.service;
+package com.onemedics.semi_note.graphql.query;
 
 import com.onemedics.semi_note.model.AnonymousBoard;
 import com.onemedics.semi_note.repository.AnonymousBoardRepository;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 @RequiredArgsConstructor
-public class AnonymousBoardService {
+public class AnonymousBoardQuery implements GraphQLQueryResolver {
+
     private final AnonymousBoardRepository anonymousBoardRepository;
 
-    public Iterable<AnonymousBoard> anonymousBoardFindAll() {
+    Iterable<AnonymousBoard> anonymousBoardFindAll(){
         return anonymousBoardRepository.findAll();
     }
-
-
 }
