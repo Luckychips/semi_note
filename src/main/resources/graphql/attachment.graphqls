@@ -1,10 +1,25 @@
 type Attachment {
-    fileNo:Int!
+    fileNo:ID!
+    boardNo:Int
+    filePath:String
+}
+
+input AttachmentInput {
     boardNo:Int
     filePath:String
 }
 
 extend type Query {
     attachmentFindAll:[Attachment]
+}
+
+extend type Mutation {
+    addAttachment(
+        data:AttachmentInput
+    ):Attachment!
+
+    addAttachments(
+        data:[AttachmentInput]
+    ):[Attachment]
 }
 

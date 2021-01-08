@@ -1,7 +1,7 @@
 scalar Date
 
 type AnonymousBoard {
-    boardNo:Int!
+    boardNo:ID!
     title:String!
     password:String!
     content:String
@@ -11,6 +11,19 @@ type AnonymousBoard {
     attachments:[Attachment]
 }
 
+input AnonymousBoardInput{
+    title:String!
+    password:String!
+    content:String
+    creatorName:String!
+}
+
 extend type Query {
     anonymousBoardFindAll:[AnonymousBoard]
+}
+
+extend type Mutation {
+    addAnonymousBoard(
+        data:AnonymousBoardInput
+    ):AnonymousBoard!
 }
